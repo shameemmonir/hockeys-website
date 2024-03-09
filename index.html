@@ -2,151 +2,199 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockeys</title>
-    <!-- tailwind and daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awesome link  -->
-    <script src="https://kit.fontawesome.com/b09be12d69.js" crossorigin="anonymous"></script>
-    <!-- google fonts poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto&display=swap"
-        rel="stylesheet">
-    <!-- tailwind custom classes -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        'bike-primary': '#E76F51',
-                        'hockey-primary': '#FF4240',
-                        'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockeys</title>
+  <!-- tailwind and daisy ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome link  -->
+  <script src="https://kit.fontawesome.com/b09be12d69.js" crossorigin="anonymous"></script>
+  <!-- google fonts poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto&display=swap"
+    rel="stylesheet">
+  <!-- tailwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockey-primary': '#FF4240',
+          }
         }
-    </script>
-    <style>
-        .font-poppins {
-            font-family: "Poppins", sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .font-poppins {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
-                            <li><a>Home</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>News</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost normal-case text-3xl lg:text-4xl font-extrabold">Hockey<span
-                            class="text-[#FF4240]">'</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-bold">
-                        <li><a class="text-[#FF4240]">Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="gap-5">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a class="btn bg-bike-primary text-white">Get Ticket</a>
-                </div>
+  <header>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-        </nav>
-      
-          <!-- slider/carousel area start  -->
-          <div class="carousel ml-32 mr-32 h-[450px]">
-            <!-- slide-1  -->
-            <div id="slide1" class="carousel-item relative w-full m-5">
-              <img src="Images/1.png" class="w-full" />
-              <div class="card-body absolute bg-black rounded-lg w-[700px] bottom-5 right-0">
-                <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
-                <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro doloremque, corrupti accusamus libero hic optio quae et minima!</p>
-                <div class="card-actions">
-                </div>
-              </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <!-- slide-2  -->
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="card-body absolute bg-black rounded-lg w-[700px] bottom-5 right-0">
-                <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
-                <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro doloremque, corrupti accusamus libero hic optio quae et minima!</p>
-                <div class="card-actions">
-                </div>
-              </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <!-- slide-3  -->
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="card-body absolute bg-black rounded-lg w-[700px] bottom-5 right-0">
-                <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
-                <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro doloremque, corrupti accusamus libero hic optio quae et minima!</p>
-                <div class="card-actions">
-                </div>
-              </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <!-- slide-4  -->
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="card-body absolute bg-black rounded-lg w-[700px] bottom-5 right-0">
-                <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
-                <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro doloremque, corrupti accusamus libero hic optio quae et minima!</p>
-                <div class="card-actions">
-                </div>
-              </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-    </header>
-    <main>
-      <section class="my-24">
-        <h3 class="text-5xl font-semibold text-center mb-5">Professional Hockeys Club</h3>
-        <p class="text-center mb-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin.</p>
-      </section>
-    </main>
-    <footer>
+          <a class="btn btn-ghost normal-case text-3xl lg:text-4xl font-extrabold">Hockey<span
+              class="text-[#FF4240]">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-bold">
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="gap-5">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a class="btn bg-bike-primary text-white">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
 
-    </footer>
+    <!-- slider/carousel area start  -->
+    <div class="carousel ml-32 mr-32 h-[450px]">
+      <!-- slide-1  -->
+      <div id="slide1" class="carousel-item relative w-full m-5">
+        <img src="Images/1.png" class="w-full" />
+        <div class="card-body absolute bg-black rounded-lg w-[700px] bottom-5 right-0">
+          <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
+          <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro
+            doloremque, corrupti accusamus libero hic optio quae et minima!</p>
+          <div class="card-actions">
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide-2  -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="card-body absolute bg-black rounded-lg w-[700px] bottom-5 right-0">
+          <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
+          <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro
+            doloremque, corrupti accusamus libero hic optio quae et minima!</p>
+          <div class="card-actions">
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide-3  -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="card-body absolute bg-black rounded-lg w-[700px] bottom-5 right-0">
+          <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
+          <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro
+            doloremque, corrupti accusamus libero hic optio quae et minima!</p>
+          <div class="card-actions">
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide-4  -->
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="card-body absolute bg-black rounded-lg w-[500px] bottom-5 right-0">
+          <h2 class="card-title text-3xl text-white">Meet all the heroes from the field</h2>
+          <p class="text-[#A1A1A3]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa porro
+            doloremque, corrupti accusamus libero hic optio quae et minima!</p>
+          <div class="card-actions">
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="my-24 mx-32">
+      <h3 class="text-5xl font-semibold text-center mb-5">Professional Hockeys Club</h3>
+      <p class="text-center mb-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>
+        dolor. Purus urna in sit nullam proin.</p>
+      <div class="flex">
+        <!-- progress bar-1  -->
+        <div class="text-center w-80">
+          <div>
+            <div class="radial-progress text-hockey-primary text-xl font-extrabold" style="--value:87;" role="progressbar">87%</div>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-bold">Prayer Facility</h2>
+            <p>Amet consectetur. Condimentum
+              dignissim adipiscing .</p>
+          </div>
+        </div>
+        <!-- progress bar-2  -->
+        <div class="text-center w-80">
+          <div>
+            <div class="radial-progress text-[#49D293] text-xl font-extrabold" style="--value:95;" role="progressbar">95%</div>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-bold">Prayer Facility</h2>
+            <p>Amet consectetur. Condimentum
+              dignissim adipiscing .</p>
+          </div>
+        </div>
+        <!-- progress bar-3  -->
+        <div class="text-center w-80">
+          <div>
+            <div class="radial-progress text-yellow-400 text-xl font-extrabold" style="--value:90;" role="progressbar">90%</div>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-bold">Prayer Facility</h2>
+            <p>Amet consectetur. Condimentum
+              dignissim adipiscing .</p>
+          </div>
+        </div>
+        <!-- progress bar-4  -->
+        <div class="text-center w-80">
+          <div>
+            <div class="radial-progress text-blue-600 text-xl font-extrabold" style="--value:80;" role="progressbar">80%</div>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-bold">Prayer Facility</h2>
+            <p>Amet consectetur. Condimentum
+              dignissim adipiscing .</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
